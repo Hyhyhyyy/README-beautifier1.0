@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 560">
+<defs>
+    <filter id="sh" x="-8%" y="-8%" width="116%" height="116%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+    <marker id="arr-dk" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#334155"/>
+    </marker>
+    <style>.t{font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif} .lb{font-size:12px;fill:#475569;font-weight:600}</style>
+  </defs>
+<rect width="920" height="560" rx="16" fill="#faf5ff"/>
+<text x="460" y="38" text-anchor="middle" class="t" font-size="22" font-weight="800" fill="#4c1d95">README Beautifier · 工作流</text>
+<rect x="75" y="90" width="230" height="120" rx="10" fill="#7c3aed" stroke="#fff" stroke-width="1.5" filter="url(#sh)"/>
+<text x="190.0" y="156.0" text-anchor="middle" class="t" font-size="15" font-weight="700" fill="#fff">gen_banners.py</text>
+<text x="87" y="134" class="lb">THEMES 字典</text>
+<text x="190.0" y="156" text-anchor="middle" class="t" font-size="12" fill="#475569">1280×380</text>
+<text x="190.0" y="174" text-anchor="middle" class="t" font-size="12" fill="#475569">SMIL 动画横幅</text>
+<line x1="311" y1="150.0" x2="345" y2="150.0" stroke="#7c3aed" stroke-width="2" marker-end="url(#arr-dk)"/>
+<rect x="345" y="90" width="230" height="120" rx="10" fill="#0891b2" stroke="#fff" stroke-width="1.5" filter="url(#sh)"/>
+<text x="460.0" y="156.0" text-anchor="middle" class="t" font-size="15" font-weight="700" fill="#fff">gen_diagrams.py</text>
+<text x="357" y="134" class="lb">DIAGRAMS 字典</text>
+<text x="460.0" y="156" text-anchor="middle" class="t" font-size="12" fill="#475569">架构 / 流程图</text>
+<text x="460.0" y="174" text-anchor="middle" class="t" font-size="12" fill="#475569">静态 SVG</text>
+<line x1="581" y1="150.0" x2="615" y2="150.0" stroke="#7c3aed" stroke-width="2" marker-end="url(#arr-dk)"/>
+<rect x="615" y="90" width="230" height="120" rx="10" fill="#db2777" stroke="#fff" stroke-width="1.5" filter="url(#sh)"/>
+<text x="730.0" y="156.0" text-anchor="middle" class="t" font-size="15" font-weight="700" fill="#fff">gen_readmes.py</text>
+<text x="627" y="134" class="lb">BUILDERS 字典</text>
+<text x="730.0" y="156" text-anchor="middle" class="t" font-size="12" fill="#475569">徽章 + 特性表</text>
+<text x="730.0" y="174" text-anchor="middle" class="t" font-size="12" fill="#475569">重组 README</text>
+<rect x="280" y="244" width="360" height="40" rx="10" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5" filter="url(#sh)"/>
+<text x="460.0" y="270.0" text-anchor="middle" class="t" font-size="13" font-weight="700" fill="#fff">数据驱动：增改字典即可支持新仓库</text>
+<line x1="460" y1="214" x2="460" y2="240" stroke="#64748b" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="120" y="330" width="300" height="70" rx="10" fill="#0f766e" stroke="#fff" stroke-width="1.5" filter="url(#sh)"/>
+<text x="270.0" y="371.0" text-anchor="middle" class="t" font-size="14" font-weight="700" fill="#fff">git clone → commit → push</text>
+<rect x="500" y="330" width="300" height="70" rx="10" fill="#0f172a" stroke="#fff" stroke-width="1.5" filter="url(#sh)"/>
+<text x="650.0" y="371.0" text-anchor="middle" class="t" font-size="14" font-weight="700" fill="#fff">GitHub README
+动画横幅在线播放</text>
+<line x1="420" y1="365" x2="500" y2="365" stroke="#0f766e" stroke-width="2" marker-end="url(#arr-dk)"/>
+<text x="430" y="358" class="lb">推送</text>
+<text x="460" y="450" text-anchor="middle" class="t" font-size="13" font-weight="700" fill="#4c1d95">GitHub 清洗内联 &lt;style&gt;/&lt;script&gt;，但保留 &lt;img src="banner.svg"&gt; 并渲染 SMIL 动画</text>
+<text x="460" y="476" text-anchor="middle" class="t" font-size="12" fill="#64748b">因此横幅必须是独立 .svg 文件，零前端 JS 即可在 README 中动起来</text>
+<rect x="200" y="500" width="520" height="40" rx="10" fill="#7c3aed" stroke="#7c3aed" stroke-width="1.5" filter="url(#sh)"/>
+<text x="460.0" y="526.0" text-anchor="middle" class="t" font-size="13" font-weight="700" fill="#fff">已美化 9 个仓库 · 8 种 motif · 7 套架构图模板 · 全仓库视觉一致</text>
+</svg>
