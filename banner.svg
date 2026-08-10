@@ -1,117 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 380" width="1280" height="380" role="img" aria-label="README Beautifier · 一键美化 GitHub 仓库 Landing Page">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 380" role="img" aria-label="README-beautifier" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif">
   <defs>
-    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#160d2a"/>
-      <stop offset="0.55" stop-color="#241046"/>
-      <stop offset="1" stop-color="#110a20"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a1030"/>
+      <stop offset="1" stop-color="#2e1d52"/>
     </linearGradient>
-    <linearGradient id="beamGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#e9d5ff" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#c4b5fd" stop-opacity="0.8"/>
-      <stop offset="1" stop-color="#e9d5ff" stop-opacity="0"/>
-    </linearGradient>
-    <radialGradient id="haloGrad" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#a855f7" stop-opacity="0.5"/>
-      <stop offset="1" stop-color="#a855f7" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#c4b5fd"/>
-      <stop offset="1" stop-color="#e879f9"/>
+      <stop offset="1" stop-color="#f0abfc"/>
     </linearGradient>
-    <linearGradient id="prismGrad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#a855f7"/>
-      <stop offset="0.5" stop-color="#e879f9"/>
-      <stop offset="1" stop-color="#8b5cf6"/>
-    </linearGradient>
-    <linearGradient id="paperGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#e7e3f2"/>
-      <stop offset="1" stop-color="#d3cce6"/>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#c4b5fd" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
   </defs>
-
-  <rect width="1280" height="380" fill="url(#bgGrad)"/>
-
-  <!-- (a) BANNER-WIDE MOTION: violet light sweep across the full width -->
-  <g>
-    <rect x="-220" y="0" width="220" height="380" fill="url(#beamGrad)" opacity="0">
-      <animate attributeName="x" values="-220;1500;-220" dur="8.2s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;0.5;0" dur="8.2s" repeatCount="indefinite"/>
-    </rect>
+  <rect width="1280" height="380" fill="url(#bg)"/>
+  <circle cx="960" cy="190" r="152" fill="#a78bfa" opacity="0.07"/>
+  <circle cx="960" cy="190" r="152" fill="none" stroke="#a78bfa" stroke-width="2" opacity="0.18"/>
+  <rect x="-220" y="0" width="220" height="380" fill="url(#beam)">
+    <animate attributeName="x" values="-220;1300;-220" dur="7.5s" repeatCount="indefinite"/>
+  </rect>
+  <g transform="translate(960,190)">
+    <circle r="118" fill="#120a24" stroke="#a78bfa" stroke-width="8"/>
+    <path d="M0,-72 C8,-20 20,-8 72,0 C20,8 8,20 0,72 C-8,20 -20,8 -72,0 C-20,-8 -8,-20 0,-72 Z" fill="#a78bfa" stroke="#f0abfc" stroke-width="6"/>
+    <circle r="14" fill="#f0abfc"/>
   </g>
-  <g fill="#ddd6fe">
-    <circle cx="0" cy="90" r="2.2" opacity="0.6">
-      <animate attributeName="cx" values="-20;1320" dur="9.5s" repeatCount="indefinite"/>
+  <g transform="translate(370,138)">
+    <circle r="10" fill="#f0abfc">
+      <animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="0" cy="300" r="1.8" opacity="0.5">
-      <animate attributeName="cx" values="1320;-20" dur="11.5s" repeatCount="indefinite"/>
-    </circle>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5s" repeatCount="indefinite"/>
+      <circle cx="56" cy="0" r="9" fill="#c4b5fd"/>
+    </g>
   </g>
-
-  <!-- (b) TITLE-SURROUND MOTION: pulsing halo + draw-on underline -->
-  <circle cx="300" cy="128" r="132" fill="url(#haloGrad)">
-    <animate attributeName="r" values="116;144;116" dur="4.4s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.5;0.85;0.5" dur="4.4s" repeatCount="indefinite"/>
-  </circle>
-
-  <text x="62" y="134" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="52" font-weight="800" fill="url(#titleGrad)">README Beautifier</text>
-  <line x1="64" y1="154" x2="372" y2="154" stroke="#e879f9" stroke-width="4" stroke-linecap="round" stroke-dasharray="310" stroke-dashoffset="310">
-    <animate attributeName="stroke-dashoffset" values="310;0;0;310" keyTimes="0;0.5;0.85;1" dur="6s" repeatCount="indefinite"/>
-  </line>
-  <text x="64" y="188" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="20" font-weight="500" fill="#ddd6fe">一键美化 GitHub 仓库 Landing Page</text>
-
-  <g font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="15" font-weight="600" fill="#ddd6fe">
-    <rect x="64" y="208" width="96" height="30" rx="15" fill="#2c1a4d"/>
-    <text x="84" y="228">动画横幅</text>
-    <rect x="176" y="208" width="80" height="30" rx="15" fill="#2c1a4d"/>
-    <text x="194" y="228">架构图</text>
-    <rect x="272" y="208" width="80" height="30" rx="15" fill="#2c1a4d"/>
-    <text x="290" y="228">徽章表</text>
-  </g>
-
-  <!-- HERO MOTIF (right): plain README -> beautify prism -> polished landing page -->
-  <g transform="translate(985,192)">
-    <!-- plain source doc -->
-    <g>
-      <animateTransform attributeName="transform" type="translate" values="0 0;0 -6;0 0" dur="4.8s" repeatCount="indefinite"/>
-      <rect x="-158" y="-112" width="120" height="224" rx="10" fill="url(#paperGrad)"/>
-      <rect x="-140" y="-86" width="84" height="8" rx="4" fill="#9b91b8"/>
-      <rect x="-140" y="-66" width="70" height="8" rx="4" fill="#bdb4d6"/>
-      <rect x="-140" y="-46" width="84" height="8" rx="4" fill="#bdb4d6"/>
-      <rect x="-140" y="-26" width="60" height="8" rx="4" fill="#bdb4d6"/>
-      <rect x="-140" y="-6" width="78" height="8" rx="4" fill="#bdb4d6"/>
-    </g>
-    <!-- beautify prism (rotating) -->
-    <g>
-      <animateTransform attributeName="transform" type="rotate" from="0 4 0" to="360 4 0" dur="14s" repeatCount="indefinite"/>
-      <polygon points="4,-50 54,0 4,50 -46,0" fill="url(#prismGrad)" opacity="0.92"/>
-      <polygon points="4,-26 30,0 4,26 -22,0" fill="#ffffff" opacity="0.25"/>
-    </g>
-    <!-- flow sparkles doc -> prism -> page -->
-    <g fill="#f0abfc">
-      <circle cx="0" cy="0" r="3">
-        <animate attributeName="cx" values="-40;40;40" keyTimes="0;0.5;1" dur="3s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="0" cy="0" r="2.4">
-        <animate attributeName="cx" values="-40;40;40" keyTimes="0;0.5;1" dur="3s" begin="1s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;1;0" dur="3s" begin="1s" repeatCount="indefinite"/>
-      </circle>
-    </g>
-    <!-- polished landing page card -->
-    <g>
-      <animate attributeName="opacity" values="0.82;1;0.82" dur="3.8s" repeatCount="indefinite"/>
-      <rect x="58" y="-104" width="176" height="208" rx="14" fill="#0f0a1f"/>
-      <rect x="58" y="-104" width="176" height="40" rx="14" fill="url(#prismGrad)"/>
-      <rect x="74" y="-30" width="144" height="9" rx="4" fill="#c4b5fd"/>
-      <rect x="74" y="-12" width="120" height="7" rx="3" fill="#4c3a6b"/>
-      <rect x="74" y="4" width="144" height="7" rx="3" fill="#4c3a6b"/>
-      <g font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="700" fill="#fff">
-        <rect x="74" y="22" width="40" height="18" rx="9" fill="#a855f7"/>
-        <rect x="120" y="22" width="40" height="18" rx="9" fill="#e879f9"/>
-        <rect x="166" y="22" width="40" height="18" rx="9" fill="#8b5cf6"/>
-      </g>
-      <rect x="74" y="52" width="144" height="6" rx="3" fill="#4c3a6b"/>
-      <rect x="74" y="66" width="144" height="6" rx="3" fill="#4c3a6b"/>
-    </g>
+  <text x="70" y="150" font-size="54" font-weight="800" fill="url(#title)">README-beautifier</text>
+  <text x="72" y="198" font-size="22" fill="#d9cdff" opacity="0.9">README 一键美化落地页</text>
+  <g font-size="16" font-weight="600">
+    <rect x="72" y="220" width="120" height="34" rx="17" fill="#a78bfa" opacity="0.18" stroke="#c4b5fd" stroke-width="2"/>
+    <text x="132" y="242" fill="#e3daff" text-anchor="middle">横幅</text>
+    <rect x="204" y="220" width="120" height="34" rx="17" fill="#f0abfc" opacity="0.16" stroke="#f0abfc" stroke-width="2"/>
+    <text x="264" y="242" fill="#fce2fe" text-anchor="middle">架构图</text>
   </g>
 </svg>
