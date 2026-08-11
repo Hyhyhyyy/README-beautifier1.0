@@ -1,45 +1,63 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 380" role="img" aria-label="README-beautifier" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#1a1030"/>
-      <stop offset="1" stop-color="#2e1d52"/>
+      <stop offset="0" stop-color="#4c1d95"/>
+      <stop offset="0.5" stop-color="#7e22ce"/>
+      <stop offset="1" stop-color="#c026d3"/>
     </linearGradient>
     <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#c4b5fd"/>
+      <stop offset="0" stop-color="#ffffff"/>
       <stop offset="1" stop-color="#f0abfc"/>
     </linearGradient>
+    <linearGradient id="star" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c4b5fd"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f0abfc" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#f0abfc" stop-opacity="0"/>
+    </radialGradient>
     <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#c4b5fd" stop-opacity="0.20"/>
+      <stop offset="0.5" stop-color="#c4b5fd" stop-opacity="0.22"/>
       <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
   </defs>
   <rect width="1280" height="380" fill="url(#bg)"/>
-  <circle cx="960" cy="190" r="152" fill="#a78bfa" opacity="0.07"/>
-  <circle cx="960" cy="190" r="152" fill="none" stroke="#a78bfa" stroke-width="2" opacity="0.18"/>
+  <ellipse cx="980" cy="200" rx="200" ry="165" fill="url(#glow)"/>
+  <circle cx="1066" cy="120" r="6" fill="#fde68a" opacity="0.9"/>
+  <circle cx="900" cy="284" r="5" fill="#fbcfe8" opacity="0.85"/>
+  <circle cx="1090" cy="278" r="4" fill="#e9d5ff" opacity="0.7"/>
   <rect x="-220" y="0" width="220" height="380" fill="url(#beam)">
     <animate attributeName="x" values="-220;1300;-220" dur="7.5s" repeatCount="indefinite"/>
   </rect>
-  <g transform="translate(960,190)">
-    <circle r="118" fill="#120a24" stroke="#a78bfa" stroke-width="8"/>
-    <path d="M0,-72 C8,-20 20,-8 72,0 C20,8 8,20 0,72 C-8,20 -20,8 -72,0 C-20,-8 -8,-20 0,-72 Z" fill="#a78bfa" stroke="#f0abfc" stroke-width="6"/>
-    <circle r="14" fill="#f0abfc"/>
-  </g>
-  <g transform="translate(370,138)">
-    <circle r="10" fill="#f0abfc">
-      <animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite"/>
-    </circle>
+  <g transform="translate(980,190)">
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5s" repeatCount="indefinite"/>
-      <circle cx="56" cy="0" r="9" fill="#c4b5fd"/>
+      <animateTransform attributeName="transform" type="scale" values="1;1.14;1" dur="2.4s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+      <path d="M0,-78 C10,-22 22,-10 78,0 C22,10 10,22 0,78 C-10,22 -22,10 -78,0 C-22,-10 -10,-22 0,-78 Z" fill="url(#star)" stroke="#f0abfc" stroke-width="8"/>
+      <circle cx="-20" cy="-6" r="8" fill="#ffffff"/>
+      <circle cx="20" cy="-6" r="8" fill="#ffffff"/>
+      <circle cx="-20" cy="-4" r="4" fill="#4c1d95"/>
+      <circle cx="20" cy="-4" r="4" fill="#4c1d95"/>
+      <path d="M-16,16 Q0,32 16,16" fill="none" stroke="#4c1d95" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="-34" cy="10" r="8" fill="#f0abfc" opacity="0.5"/>
+      <circle cx="34" cy="10" r="8" fill="#f0abfc" opacity="0.5"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6s" repeatCount="indefinite"/>
+      <circle cx="0" cy="-110" r="7" fill="#fde68a"/>
+      <circle cx="98" cy="54" r="5" fill="#fbcfe8"/>
     </g>
   </g>
+  <line x1="72" y1="172" x2="438" y2="172" stroke="#f0abfc" stroke-width="6" stroke-linecap="round" stroke-dasharray="366" stroke-dashoffset="366">
+    <animate attributeName="stroke-dashoffset" values="366;0;0;366" dur="6s" repeatCount="indefinite"/>
+  </line>
   <text x="70" y="150" font-size="54" font-weight="800" fill="url(#title)">README-beautifier</text>
-  <text x="72" y="198" font-size="22" fill="#d9cdff" opacity="0.9">README 一键美化落地页</text>
+  <text x="72" y="198" font-size="22" fill="#e9d5ff" opacity="0.92">README 一键美化落地页</text>
   <g font-size="16" font-weight="600">
-    <rect x="72" y="220" width="120" height="34" rx="17" fill="#a78bfa" opacity="0.18" stroke="#c4b5fd" stroke-width="2"/>
-    <text x="132" y="242" fill="#e3daff" text-anchor="middle">横幅</text>
-    <rect x="204" y="220" width="120" height="34" rx="17" fill="#f0abfc" opacity="0.16" stroke="#f0abfc" stroke-width="2"/>
-    <text x="264" y="242" fill="#fce2fe" text-anchor="middle">架构图</text>
+    <rect x="72" y="220" width="120" height="34" rx="17" fill="#a78bfa" opacity="0.20" stroke="#c4b5fd" stroke-width="2"/>
+    <text x="132" y="242" fill="#f3e8ff" text-anchor="middle">横幅</text>
+    <rect x="204" y="220" width="120" height="34" rx="17" fill="#f0abfc" opacity="0.18" stroke="#f0abfc" stroke-width="2"/>
+    <text x="264" y="242" fill="#fce7fe" text-anchor="middle">架构图</text>
   </g>
 </svg>
